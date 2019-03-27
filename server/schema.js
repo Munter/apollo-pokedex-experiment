@@ -1,12 +1,6 @@
 const { gql } = require('apollo-server');
 
 const typeDefs = gql`
-  type Query {
-    pokemons: [Pokemon]!
-    pokemon(id: ID!): Pokemon
-    abilities: [Ability]
-  }
-
   type Pokemon {
     id: ID!
     name: String!
